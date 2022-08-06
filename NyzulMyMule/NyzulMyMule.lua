@@ -765,7 +765,7 @@ windower.register_event('load', function()
     if (info.logged_in) then
         context.commands.setmule(settings.auto_navigate.mule_name);
         if (info.zone == 77) then
-            if (settings.end_time) and (setting.end_time > os.time()) then
+            if (settings.end_time) and (settings.end_time > os.time()) then
                 context.status.end_time = settings.end_time;
                 context.status.zone_timer = (settings.end_time - os.time());
             end
